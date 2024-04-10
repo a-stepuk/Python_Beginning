@@ -1,11 +1,4 @@
-
-def f(n):
-    if n == 0 or n == 1:
-        return 1
-
-    return f(n - 1) + f(n - 2)
-
-
-n = int(input())
-
-print(f(n - 2))
+data = [x for x in range(10)]
+res = set(filter(lambda x: x % 2 == 0, data))
+print(data)
+print(res) # [0, 2, 4, 6, 8]

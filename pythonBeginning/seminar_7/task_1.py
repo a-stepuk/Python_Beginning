@@ -13,7 +13,7 @@
 #
 # Между элементами должен быть 1 (один) пробел, в конце строки пробел не нужен.
 
-def print_operation_table(operation, num_rows = 9, num_columns = 9):
+def print_operation_table(operation, num_rows=9, num_columns=9):
     if num_rows < 2 or num_columns < 2:
         print("ОШИБКА! Размерности таблицы должны быть больше 2!")
 
@@ -27,5 +27,6 @@ def print_operation_table(operation, num_rows = 9, num_columns = 9):
 
         print(' '.join(list))
         list.clear()
+
 
 print_operation_table(lambda x, y: x / y, 3, 3)
