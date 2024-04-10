@@ -23,7 +23,7 @@ if len(fraza_list) < 2:
 
 for i in range(len(fraza_list)):
     for char in fraza_list[i]:
-        if char in vowel_letters:
+        if char.lower() in vowel_letters:
             vowel_counter += 1
 
     vowel_counter_set.add(vowel_counter)
@@ -33,3 +33,15 @@ if len(vowel_counter_set) == 1:
     print("Парам пам-пам")
 else:
     print("Пам парам")
+
+# Решение GeekBrains:
+
+# countVowels = []
+#
+# for i in fraza_list:
+#     countVowels.append(len([x for x in i if x.lower() in vowel_letters]))
+#
+# if countVowels.count(countVowels[0]) == len(countVowels):
+#     print('Парам пам-пам')
+# else:
+#     print('Пам парам')
